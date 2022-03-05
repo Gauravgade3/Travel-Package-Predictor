@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Welcome To Travel Package Predictor!!</title>
+</head>
+
+<body>
+    <h1>
+        Welcome To Travel Package Predictor!! Result
+    </h1>
+    <h2>
+        Hurray, Customer may purchase the Travel Package.
+    </h2>
+    <footer>
+        <a>
+            iNeuron Internship
+            copyright@ Gaurav Gade-2022
+        </a>
+    </footer>
+    <div class="container">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2 class='container-heading' style="margin: 10%;"><span class="heading_font">Welcome To Travel Package Predictor!!</span></h2>
+            <br>
+            <br>
+            <br>
+
+             Result
+            <div style="color: rgba(236, 15, 15, 0.993);" class="results">
+                <h2> {{prediction_text}}</h2>
+            </div>
+
+        </form>
+
+    </div>
+    <br>
+    <br>
+
+
+
+    <style>
+
+h1 {
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 90px;
+    color: red;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px green;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: Green;
+
+    text-align: center;
+    margin-top: 200px;
+
+}
+
+a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+
+    text-align: center;
+    margin-top: 40px;
+
+}
+
+
+
+
+        .heading_font{
+                    color: rgba(236, 15, 15, 0.993);
+                    font-family: "Times New Roman", Times, serif;
+                    font-size: 50px;
+                    font-weight: normal;
+        }
+
+
+    </style>
+
+</body>
+
+</html>
