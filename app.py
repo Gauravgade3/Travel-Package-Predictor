@@ -86,7 +86,7 @@ def predict():
             Designation == 0
         MonthlyIncome = request.form.get('MonthlyIncome',type=int)
 
-        value = model.predict([[Age, TypeofContact, CityTier, DurationOfPitch, Occupation, Gender, NumberOfPersonVisiting,
+        value = model.transform([[Age, TypeofContact, CityTier, DurationOfPitch, Occupation, Gender,
                                   NumberOfPersonVisiting, NumberOfFollowups, ProductPitched, PreferredPropertyStar,
                                   MaritalStatus, NumberOfTrips, Passport, PitchSatisfactionScore, OwnCar,
                                   NumberOfChildrenVisiting, Designation, MonthlyIncome]])
